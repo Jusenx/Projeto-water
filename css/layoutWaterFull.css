@@ -1,0 +1,191 @@
+.logado {
+    display: flex;
+    height: 80vh;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+
+.copo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17%;
+    height: 70%;
+    border-radius: 0px 0px 50px 50px;
+    background-color: #dadada;
+    border: 1px solid;
+    margin: 10px auto;
+    position: relative;
+    animation-duration: 0.9s;
+    animation-name: border-copo-altura;
+
+}
+
+.agua {
+    width: 90%;
+    background-color: #38368a;
+    border-radius: 0px 0px 45px 45px;
+    bottom: 0;
+    position: absolute;
+    margin-left: 1px;
+    margin-bottom: 4px;
+    transition: height 1s ease;
+}
+
+.porcentagem {
+    color: #636363;
+    font-size: 1rem;
+    margin: 20px auto;
+    position: absolute;
+    text-align: center;
+
+}
+
+.input {
+    display: block;
+    margin: 20px auto;
+    font-size: 1.2rem;
+}
+
+.tabela {
+    width: 30%;
+    height: 70%;
+    background-color: #7827ec;
+    margin: 20px auto;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation-duration: 1.1s;
+    animation-name: slidein-altura-2;
+
+}
+
+.adicionar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 46px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 100px;
+    left: 40%;
+    color: #636363;
+}
+
+.adicionar:hover {
+    background-color: rgb(221, 221, 221);
+}
+.numeros{
+    margin-bottom: 180px;
+}
+#btt {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    margin: 3px;
+    cursor: pointer;
+    color: #636363;
+    position: flex;
+    font-size: 1.5rem;
+}
+#btt:hover {
+    background-color: rgb(221, 221, 221);
+}
+.resultado {
+    color: #ffffff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 300px;
+    font-size: 1.5rem;
+}
+
+@keyframes border-copo-altura {
+    from {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+         background-color:#e0d6ea;
+        color: black;
+        width: 50%;
+        height: 70%;
+        border-top-left-radius: 60px;
+        border-bottom-left-radius: 60px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    to {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17%;
+    height: 70%;
+    border-radius: 0px 0px 50px 50px;
+    background-color: #dadada;
+    border: 1px solid;
+    margin: 10px auto;
+    position: relative;
+    }
+}
+
+
+@keyframes slidein-altura-2 {
+    from {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #663399;
+    border-radius: 1px 3333px 3333px 1px;   
+    }
+
+    to {
+     width: 30%;
+    height: 70%;
+    background-color: #7827ec;
+    margin: 20px auto;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    }
+}
+
+.input-altura-style * {
+    opacity: 0; /* Começa invisível */
+    animation: fadein 1.2s ease-in-out forwards;
+    animation-delay: 1.5s; /* Espera a animação principal terminar */
+}
+.titulo-water-altura * {
+    opacity: 0; /* Começa invisível */
+    animation: fadein 1.4s ease-in-out forwards;
+    animation-delay: 0.8s; /* Espera a animação principal terminar */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

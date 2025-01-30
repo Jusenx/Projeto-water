@@ -1,0 +1,121 @@
+.tarefas{
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    width: 350px;
+    height: 420px;
+    padding: 10px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui o padding na largura e altura */
+}
+
+.tarefas-header{
+    margin-top: 10px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 20px; /* Cria um espaço abaixo do header */
+}
+
+.tarefas-resultado{
+    flex: 1; /* Preenche o espaço restante */
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column; /* Mantém os itens empilhados */
+    align-items: center; /* Centraliza o conteúdo interno */
+    gap: 10px;
+    padding: 10px;
+    border-top: 1px solid #333333;
+}
+
+.btn {
+    margin-top: 20px;
+    display: flex;
+    padding: 15px 20px;
+    background-color: #356627;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.2s;
+}
+.btt-remover{
+    background-color: #830d0d;
+    color: #ffffff;
+    padding: 9px 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.70rem;
+    transition: background-color 0.2s;
+}
+
+/* Grupo do campo */
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+}
+
+/* Estilização do input */
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #888888; /* Substitui $gray */
+    outline: 0;
+    font-size: 1.3rem;
+    color: #ffffff; /* Substitui $white */
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+/* Placeholder transparente */
+.form__field::placeholder {
+    color: transparent;
+}
+
+/* Label quando o placeholder está visível */
+.form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+/* Label do campo */
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #888888; /* Substitui $gray */
+}
+
+/* Estilo ao focar no campo */
+.form__field:focus {
+    padding-bottom: 6px;  
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #666666, #444444); /* Substitui $primary e $secondary */
+    border-image-slice: 1;
+}
+
+/* Label quando o campo está em foco */
+.form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #ffffff; /* Substitui $primary */
+    font-weight: 700;    
+}
+
+/* Resetações para campos obrigatórios e inválidos */
+.form__field:required,
+.form__field:invalid {
+    box-shadow: none;
+}

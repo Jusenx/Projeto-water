@@ -1,0 +1,200 @@
+
+
+.alert-altura{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color:#e0d6ea;
+    color: black;
+    width: 50%;
+    height: 70%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    animation-duration: 0.9s;
+    animation-name: border-alert-altura;
+
+}
+
+.titulo-water-altura{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+}
+.btt-div-altura{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.input-altura-style{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #663399;
+    animation-duration: 1.1s;
+    animation-name: slidein-altura;
+    border-radius: 1px 3333px 3333px 1px;
+}
+.input-altura{
+    font-family: inherit;
+    width: 30%;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #000000; /* Substitui $white */
+    padding: 7px 0;
+    background-color: #ffe4c4;
+    border-radius: 9px;
+    transition: border-color 0.2s;
+    margin-right: 33%;
+    
+}
+
+.btt-div-altura{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 10%;
+    margin-right: 45px;
+    margin-top: 10px;
+}
+
+.btt-altura{
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 13px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 50%;
+    width: 50%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.btt-altura:hover {
+  background-color: #008b58;
+}
+.btt-altura-voltar:hover{
+    background-color: #8b2700;
+}
+
+.btt-altura-voltar{
+    background-color: #9b3319; /* Green */
+    border: none;
+    color: white;
+    padding: 13px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 50%;
+    width: 50%;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.btt-info{
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 4px 4px;
+    display: flex;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.btt-info:hover {
+  background-color: #008b58;
+}
+
+.arrow-png, .voltar-png{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+@keyframes border-alert-altura {
+    from {
+        border-top-left-radius: 60px;
+        border-bottom-left-radius: 60px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    to {
+        border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    }
+}
+
+
+@keyframes slidein-altura {
+    from {
+        height: 100%;
+        width: 100%;
+        padding-right: 550px;
+        
+    }
+
+    to {
+        height: 100%;
+        width: 40%;
+    }
+}
+
+.input-altura-style * {
+    opacity: 0; /* Começa invisível */
+    animation: fadein 1.2s ease-in-out forwards;
+    animation-delay: 1.5s; /* Espera a animação principal terminar */
+}
+.titulo-water-altura * {
+    opacity: 0; /* Começa invisível */
+    animation: fadein 1.4s ease-in-out forwards;
+    animation-delay: 0.8s; /* Espera a animação principal terminar */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

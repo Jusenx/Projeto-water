@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Pessoal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-tarefas.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Bootstrap
+            </a>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="tela">
+        <main class="main"> <!-- Adicionei a classe "main" aqui -->
+            <!-- Container 1 -->
+            <div class="container-1">
+                <div class="tarefas">
+                    <div class="tarefas-header">
+                        <div class="form__group">
+                            <input type="input" class="form__field" placeholder="Name" name="name" id="name" required />
+                            <label for="name" class="form__label">Adicionar Tarefa</label>
+                        </div>
+                        <div class="btt-tarefa">
+                            <button class="btn">+</button>
+                        </div>
+                    </div>   
+                    <div class="tarefas-resultado">
+                    </div>
+             </div>
+            </div>
+
+            <!-- Container 2 -->
+            <div class="container-2">
+                <div class="conta">
+                    <h1>Dinheiro</h1>
+                    <img class="money-img" src="/img/money.png" alt="">
+                </div>
+                <div class="agua">
+                    <p>Consumo diário</p>
+                    <img class="water-img" src="/img/water.png" alt="">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/script/script-tarefas.js"></script>
+</body>
+</html>

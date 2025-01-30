@@ -1,0 +1,113 @@
+@media (max-width: 768px) { 
+    .alert, .alert-altura {
+        width: 90%;
+        height: 90%;
+        flex-direction: column;
+        border-top-left-radius: 60px;
+        border-bottom-left-radius: 0px;
+         border-top-right-radius: 60px;
+        border-bottom-right-radius: 0px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        animation-duration: 0.8s;
+        animation-name: border-alert-smartphone;
+    }
+    .alert-altura{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 60px;
+         border-top-right-radius: 0px;
+        border-bottom-right-radius: 60px;
+    }
+
+    .titulo-water, .titulo, .titulo-water-altura {
+        width: 100%;
+        height: 70%;
+        text-align: center;
+        display: flex;
+    }
+    .btt-div {
+        width: 0%;
+        height: 0%;
+        margin-top: 0;
+    }
+    .btt-div-altura{
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input-style {
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+        height: 50%;
+        border-radius: 3333px 3333px 1px 1px;
+        animation-name: slidein-smartphone;
+
+
+    }
+    .input-altura-style{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+        border-radius: 1px 1px 3333px 3333px;
+        animation-name: slidein-altura-smartphone;
+    }
+
+    input{
+        width: 40%;
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+    .input-altura{
+        width: 40%;
+        font-size: 1.2rem;
+        margin-left: 33%;
+    }
+
+    .btt-div, .btt-div-altura {
+        width: 60%;
+        height: 50%;
+        gap: 40px;
+        margin-left: 0;
+    }
+
+    .btt-peso, .btt-peso-voltar, .btt-altura, .btt-altura-voltar {
+        width: 80%;
+        border-radius: 30px;
+    }
+    
+    .btt-altura, .btt-altura-voltar {
+        margin-left: 20%;
+    }
+}
+
+
+@keyframes slidein-smartphone {
+    from {
+        height: 0%;
+        width: 100%;
+    }
+
+    to {
+        height: 50%;
+        width: 100%;
+    }
+}
+
+@keyframes slidein-altura-smartphone {
+    from {
+        height: 0%;
+        width: 100%;
+    }
+
+    to {
+        height: 50%;
+        width: 100%;
+    }
+}
