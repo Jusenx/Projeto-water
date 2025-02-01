@@ -1,5 +1,5 @@
 @media (max-width: 768px) { 
-    .alert, .alert-altura {
+    .alert, .alert-altura{
         width: 90%;
         height: 90%;
         flex-direction: column;
@@ -12,6 +12,42 @@
         display: flex;
         animation-duration: 0.8s;
         animation-name: border-alert-smartphone;
+    }
+
+    .logado{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .tabela{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        animation-name: anima-tabela;
+        animation-duration: 0.8s;
+      }
+
+    .copo{
+        margin: 20px auto;
+        width: 40%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        animation-name: anima-copo;
+        animation-duration: 0.8s;
+        
+    }
+    #btt{
+        animation-name: opacidade;
+        animation-duration: 4s;
     }
     .alert-altura{
         border-top-left-radius: 0px;
@@ -88,6 +124,7 @@
 }
 
 
+
 @keyframes slidein-smartphone {
     from {
         height: 0%;
@@ -109,5 +146,25 @@
     to {
         height: 50%;
         width: 100%;
+    }
+}
+@keyframes anima-copo{
+    from {
+        width: 0%;
+        height: 0%;
+    }
+    to {
+        width: 40%;
+        height: 50%;
+    }
+}
+@keyframes anima-tabela{
+    from {
+        width: 100%;
+        height: 0%;
+    }
+    to {
+        width: 100%;
+        height: 50%;
     }
 }

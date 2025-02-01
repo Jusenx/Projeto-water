@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Pessoal - Water</title>
+    <link rel="stylesheet" href="css/layoutWater.css">
+    <link rel="stylesheet" href="css/alertAltura.css">
+    <link rel="stylesheet" href="css/alertPeso.css">
+    <link rel="stylesheet" href="css/layoutWaterFull.css">
+    <link rel="stylesheet" href="css/layoutWaterSmartphone.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/LogoWater.png" alt="Logo" width="38" height="40"
+                    class="d-inline-block align-text-top">
+            </a>
+        </div>
+    </nav>
+    <!-- Tela da Agua -->
+
+    <div class="logado" id="logado" style="display: none;"> 
+        <div class="tabela">
+            <div class="numeros">
+                <div><button id="btt" onclick="btt100()">100ml</button>
+                    <button id="btt" onclick="btt150()">150ml</button>
+                </div>
+                <div>
+
+                </div>
+                <div>
+                    <button id="btt" onclick="btt200()">200ml</button>
+                    <button id="btt" onclick="btt250()">250ml</button>
+                </div>
+                <div>
+                    <button id="btt" onclick="btt500()">500ml</button>
+                    <button id="btt" onclick="btt1000()">1000ml</button>
+                </div>
+            </div>
+            <h1 id="resultado" class="resultado"></h1>
+        </div>
+        <div class="copo">
+            <div class="agua" id="agua" style="height: 0;"></div>
+            <div id="porcentagem" class="porcentagem">0 ml</div>
+        </div>
+    </div>
+
+    <script src="script/scriptWater.js"></script>
+    
+</body>
+</html>
