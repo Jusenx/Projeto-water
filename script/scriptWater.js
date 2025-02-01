@@ -4,6 +4,8 @@ const altura = document.getElementById('altura');
 const bttPeso = document.getElementById('btt-peso');
 const bttAltura = document.getElementById('btt-altura');
 
+let alturaValue = 0;
+
 const bttVoltarAltura = document.getElementById('btt-altura-voltar');
 
 const tela1 = document.getElementById('tela1');
@@ -19,7 +21,7 @@ function salvarPeso() {
     console.log(`O valor do Peso é: ${pesoValue} e o tipo é: ${typeof pesoValue}`);
 }
 function salvarAltura() {
-    const alturaValue = parseFloat(altura.value.trim().replace(",", "."));
+    alturaValue = parseFloat(altura.value.trim().replace(",", "."));
     console.log(`O valor da Altura é: ${alturaValue} e o tipo é: ${typeof alturaValue}`);
 }
 
@@ -31,6 +33,23 @@ function proximoAlert() {
         perguntaAltura.style.removeProperty('display');
     }
 }
+function apertarEnter() {
+    document.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            if (altura.value != ""){
+                salvarAltura();
+                perguntaConcluida()
+            }if (peso.value != ""){
+                salvarPeso();
+                proximoAlert();
+                ajustarAgua();
+            }
+         console.log('apertou');
+        }
+      });
+}
+apertarEnter();
+
 function perguntaConcluida(){
     perguntaAltura.style.display = 'none';
     perguntaPeso.style.display = 'none';
@@ -46,6 +65,7 @@ function voltarAlert() {
 //*----------------------------------------------*//
 
 //* Botões Alert  *//
+
 
 bttPeso.addEventListener('click', () => {
     salvarPeso();
@@ -107,8 +127,8 @@ function ajustarAgua() {
     document.getElementById('resultado').innerHTML = `Média de água por dia é: ${totalPorcentagem}ml`;
 
     // Ajusta a altura da água de acordo com a porcentagem
-    let alturaAgua = (totalPorcentagem / totalPorcentagem) * 300; // 450px é a altura máxima
-    document.getElementById('agua').style.height = `${alturaAgua}px`;
+    let alturaAgua = (totalPorcentagem / totalPorcentagem) * 90; // 450px é a altura máxima
+    document.getElementById('agua').style.height = `${alturaAgua}%`;
 
     // Atualiza o texto da porcentagem
     document.getElementById('porcentagem').innerHTML = `${totalPorcentagem} ml`;
